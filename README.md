@@ -3,7 +3,7 @@
 ## Install Ubuntu Server
 I used 16.04 ubuntu SERVER iso:
 `http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso`
-18.04 has a different version of freetype and causes cmpile errors.
+18.04 has a different version of freetype and causes compile errors.
 
 ### Installation choices
 During the installation you will be asked what packages you want.  The `standard system utilities` will be pre-selected, keep that one and add `openssh server` if you like to be able to connect remotely.
