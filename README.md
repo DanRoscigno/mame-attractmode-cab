@@ -33,7 +33,7 @@ wget https://www.mamedev.org/roms/supertnk/supertnk.zip # from mamedev.org
 mkdir -p ~/mame/roms
 mv supertnk.zip ~/mame/roms
 ```
-#### Note: You must run this nooext command from the console, not from a remote (ssh) connection:
+#### Note: You must run this next command from the console, not from a remote (ssh) connection:
 ```
 xinit /usr/games/mame supertnk $* -- :0 vt$XDG_VTNR
 ```
