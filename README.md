@@ -12,7 +12,7 @@ During the installation you will be asked what packages you want.  The `standard
 
 ### Add tools and libraries
 
-At this point this is a commandline (no Xwindows) system.  Install the basics for compiling, libraries, and pre-requisites for MAME and Attract Mode.
+At this point this is a commandline (no Xwindows) system.  Install the basics for X, compiling, libraries, and pre-requisites for MAME and Attract Mode.
 ```
 sudo apt-get update && sudo apt-get -y install git libsfml-dev libopenal-dev \
 libavformat-dev libfontconfig1-dev libfreetype6-dev libswscale-dev \
