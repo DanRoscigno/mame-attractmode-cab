@@ -48,6 +48,12 @@ git clone http://github.com/mickelson/attract attract
 cd attract
 make -j $(cat /proc/cpuinfo | grep -c processor)
 sudo make install
+```
+### Test Attract Mode
+Choose language and let it add emulators that are found (MAME)
 
+```
 xinit /usr/games/attract $* -- :0 vt$XDG_VTNR
 ```
+
+ESC quits
