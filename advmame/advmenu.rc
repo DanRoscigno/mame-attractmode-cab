@@ -1,0 +1,109 @@
+#
+# This ADVMENU rc file is setup with both advancemame and SDLMAME as SDLMAME does not work well with vecor games
+# and I have not been able to get advancemame to work with non-vector games (video modes are not appropriate for my monitor).
+# This video issue may be related to my Sony Trinitron CPD-4401, which I have no docs for.  I should probably figure out how 
+# to lock down the video modelines to ones which work with the monitor, but SDLMAME works fine for the non-vector games.
+#
+config restore_at_exit
+display_size 1024
+emulator "ADVMAME" advmame "/usr/local/bin/advmame"
+emulator_roms "ADVMAME" "/home/mame/.mame/advroms"
+emulator_flyers "ADVMAME" "/home/mame/.mame/flyers"
+emulator_altss "ADVMAME" "/home/mame/.mame/snap"
+emulator_cabinets "ADVMAME" "/home/mame/.mame/cabinets"
+emulator_marquees "ADVMAME" "/home/mame/.mame/marquees"
+emulator_icons "ADVMAME" "/home/mame/.mame/icons"
+emulator_titles "ADVMAME" "/home/mame/.mame/titles"
+emulator "MAME" mame "/usr/games/sdlmame" 
+emulator_roms "MAME" "/home/mame/.mame/roms"
+emulator_flyers "MAME" "/home/mame/.mame/flyers"
+emulator_altss "MAME" "/home/mame/.mame/snap"
+emulator_cabinets "MAME" "/home/mame/.mame/cabinets"
+emulator_marquees "MAME" "/home/mame/.mame/marquees"
+emulator_icons "MAME" "/home/mame/.mame/icons"
+emulator_titles "MAME" "/home/mame/.mame/titles"
+device_sound sdl
+device_video fb
+event_assign up up or 8_pad
+event_assign down down or 2_pad
+event_assign left left or 4_pad
+event_assign right right or 6_pad
+event_assign enter lcontrol or enter or enter_pad
+event_assign esc esc
+event_assign space space
+event_assign home home
+event_assign end end
+event_assign pgup pgup
+event_assign pgdn pgdn
+event_assign del del
+event_assign ins insert
+event_assign shutdown lcontrol esc
+event_assign mode tab
+event_assign help f1
+event_assign group f2
+event_assign type f3
+event_assign exclude f4
+event_assign sort f5
+event_assign setgroup f9
+event_assign settype f10
+event_assign runclone f12
+event_assign command f8
+event_assign menu backquote or backslash
+event_assign emulator f6
+event_assign rotate 0_pad
+event_assign lock scrlock
+event_assign preview space
+event_assign mute period_pad
+sound_background_loop none
+#sound_background_loop_dir "/home/mame/mp3s/Queen"
+#sound_volume -20
+sound_foreground_begin none
+sound_foreground_end none
+sound_foreground_key none
+sound_foreground_start none
+sound_foreground_stop none
+mode tile_normal
+sort parent
+preview snap
+menu_base 2480
+menu_rel 2
+difficulty none
+display_orientation 
+group_include "<undefined>"
+type_include "<undefined>"
+emulator_include "MAME"
+emulator_include "ADVMAME"
+group "<undefined>"
+type "<undefined>"
+emulator_attrib "ADVMAME" missing exclude
+emulator_attrib "ADVMAME" clone exclude
+emulator_attrib "ADVMAME" bad exclude
+emulator_attrib "ADVMAME" vector include
+emulator_attrib "ADVMAME" vertical include
+emulator_attrib "ADVMAME" neogeo include
+emulator_attrib "ADVMAME" deco exclude
+emulator_attrib "ADVMAME" playchoice exclude
+emulator_attrib "MAME" missing exclude
+emulator_attrib "MAME" clone exclude
+emulator_attrib "MAME" bad exclude
+emulator_attrib "MAME" vector include
+emulator_attrib "MAME" vertical include
+emulator_attrib "MAME" neogeo include
+emulator_attrib "MAME" deco exclude
+emulator_attrib "MAME" playchoice exclude
+game "ADVMAME/bzone" "" "" 336 4 ""
+game "MAME/1941" "" "" 128 4 ""
+game "MAME/bzone" "" "" 103 3 ""
+game "MAME/centiped" "" "" 42 1 ""
+game "MAME/frogger" "" "" 168 4 ""
+game "MAME/galaga" "" "" 1591 19 ""
+game "MAME/galaga88" "" "" 216 2 ""
+game "MAME/galaxian" "" "" 21 1 ""
+game "MAME/mslug" "" "" 276 5 ""
+game "MAME/mslug2" "" "" 124 4 ""
+game "MAME/mslug3" "" "" 484 4 ""
+game "MAME/mslug4" "" "" 14 1 ""
+game "MAME/mslugx" "" "" 10 1 ""
+game "MAME/mspacman" "" "" 336 11 ""
+game "MAME/phoenix" "" "" 482 7 ""
+game "MAME/puckman" "" "" 879 11 ""
