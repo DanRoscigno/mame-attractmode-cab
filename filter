@@ -1,0 +1,34 @@
+```
+emulator_attrib "ADVMAME" missing exclude
+emulator_attrib "ADVMAME" clone exclude
+emulator_attrib "ADVMAME" bad exclude
+emulator_attrib "ADVMAME" vector include
+emulator_attrib "ADVMAME" vertical include
+emulator_attrib "ADVMAME" neogeo include
+emulator_attrib "ADVMAME" deco exclude
+emulator_attrib "ADVMAME" playchoice exclude
+emulator_attrib "MAME" missing exclude
+emulator_attrib "MAME" clone exclude
+emulator_attrib "MAME" bad exclude
+emulator_attrib "MAME" vector include
+emulator_attrib "MAME" vertical include
+emulator_attrib "MAME" neogeo include
+emulator_attrib "MAME" deco exclude
+emulator_attrib "MAME" playchoice exclude
+game "ADVMAME/bzone" "" "" 336 4 ""
+game "MAME/1941" "" "" 128 4 ""
+game "MAME/bzone" "" "" 103 3 ""
+game "MAME/centiped" "" "" 42 1 ""
+game "MAME/frogger" "" "" 168 4 ""
+game "MAME/galaga" "" "" 1591 19 ""
+game "MAME/galaga88" "" "" 216 2 ""
+game "MAME/galaxian" "" "" 21 1 ""
+game "MAME/mslug" "" "" 276 5 ""
+game "MAME/mslug2" "" "" 124 4 ""
+game "MAME/mslug3" "" "" 484 4 ""
+game "MAME/mslug4" "" "" 14 1 ""
+game "MAME/mslugx" "" "" 10 1 ""
+game "MAME/mspacman" "" "" 336 11 ""
+game "MAME/phoenix" "" "" 482 7 ""
+game "MAME/puckman" "" "" 879 11 ""
+```
