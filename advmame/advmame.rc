@@ -1,0 +1,15 @@
+#
+# Using the sdl device settings seems to be critical as otherwise I have no control through the ultimarc controller.  
+# This makes no sense to me as I can use the arcade controls at the commandline, but not in advancemame.
+#
+dir_rom /home/mame/.mame/advroms
+device_video sdl
+device_keyboard sdl
+misc_safequit no
+misc_quiet yes
+device_video_clock 10 - 150 / 30.5 - 60 / 55 - 130
+bzone/input_map[p1_doubleright_down] keyboard[0,f]
+bzone/input_map[p1_doubleright_up] keyboard[0,r]
+bzone/input_map[p1_doubleleft_down] keyboard[0,down]
+bzone/input_map[p1_doubleleft_up] keyboard[0,up]
+bzone/input_map[p1_button3] keyboard[0,lcontrol] or keyboard[0,lalt] or keyboard[0,space]
