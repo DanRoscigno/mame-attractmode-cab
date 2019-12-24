@@ -34,6 +34,9 @@ mkdir -p ~/mame/roms
 mv supertnk.zip ~/mame/roms
 ```
 #### Note: You must run this next command from the console, not from a remote (ssh) connection:
+
+Command from https://linuxconfig.org/how-to-run-x-applications-without-a-desktop-or-a-wm
+
 ```
 xinit /usr/games/mame supertnk $* -- :0 vt$XDG_VTNR
 ```
