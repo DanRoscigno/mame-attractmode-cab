@@ -1,0 +1,20 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons
+asteroid;Asteroids (rev 4);mame;;1979;Atari;Shooter / Field;1;0;only_buttons;good;1;vector;;;;5
+astdelux;Asteroids Deluxe (rev 3);mame;;1980;Atari;Shooter / Field;1;0;only_buttons;good;1;vector;;;;5
+puckman;Puck Man (Japan set 1);mame;;1980;Namco;Maze / Collect;2;90;joystick (4-way),joystick (4-way);good;1;raster;;;;
+phoenix;Phoenix (Amstar, set 1);mame;;1980;Amstar;Shooter / Gallery;2;90;joystick (2-way),joystick (2-way);good;1;raster;;;;2
+mspacman;Ms. Pac-Man;mame;;1981;Midway / General Computer Corporation;Maze / Collect;2;90;joystick (4-way),joystick (4-way);good;1;raster;;;;
+mslug;Metal Slug - Super Vehicle-001;mame;;1996;Nazca;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
+mslug2;Metal Slug 2 - Super Vehicle-001/II (NGM-2410 ~ NGH-2410);mame;;1998;SNK;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
+mslug3;Metal Slug 3 (NGM-2560);mame;;2000;SNK;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
+mslug4;Metal Slug 4 (NGM-2630);mame;;2002;Mega / Playmore;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
+mslug5;Metal Slug 5 (NGM-2680);mame;;2003;SNK Playmore;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
+mslug6;Metal Slug 6;mame;;2006;Sega / SNK Playmore;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);preliminary;1;raster;awbios;;;6
+mslugx;Metal Slug X - Super Vehicle-001 (NGM-2500 ~ NGH-2500);mame;;1999;SNK;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
+galaxian;Galaxian (Namco set 1);mame;;1979;Namco;Shooter / Gallery;2;90;joystick (2-way),joystick (2-way);good;1;raster;;;;1
+galaga88;Galaga '88;mame;;1987;Namco;Shooter / Gallery;2;270;joystick (8-way),joystick (8-way);good;1;raster;;;;3
+galaga;Galaga (Namco rev. B);mame;;1981;Namco;Shooter / Gallery;2;90;joystick (2-way),joystick (2-way);good;1;raster;;;;1
+frogger;Frogger;mame;;1981;Konami;Maze / Cross;2;90;joystick (4-way),joystick (4-way);good;1;raster;;;;
+centiped;Centipede (revision 4);mame;;1980;Atari;Shooter / Gallery;1;270;joystick (8-way),trackball;good;1;raster;;;;1
+1941;1941: Counter Attack (World 900227);mame;;1990;Capcom;Shooter / Flying Vertical;2;270;joystick (8-way),joystick (8-way);good;1;raster;;;;2
+bzone;Battle Zone (rev 2);mame;;1980;Atari;Shooter / Driving 1st Person;1;0;double joystick;good;1;vector;;;;1
