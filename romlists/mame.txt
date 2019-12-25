@@ -9,7 +9,6 @@ mslug2;Metal Slug 2 - Super Vehicle-001/II (NGM-2410 ~ NGH-2410);mame;;1998;SNK;
 mslug3;Metal Slug 3 (NGM-2560);mame;;2000;SNK;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
 mslug4;Metal Slug 4 (NGM-2630);mame;;2002;Mega / Playmore;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
 mslug5;Metal Slug 5 (NGM-2680);mame;;2003;SNK Playmore;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
-mslug6;Metal Slug 6;mame;;2006;Sega / SNK Playmore;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);preliminary;1;raster;awbios;;;6
 mslugx;Metal Slug X - Super Vehicle-001 (NGM-2500 ~ NGH-2500);mame;;1999;SNK;Platform / Shooter Scrolling;2;0;joystick (8-way),joystick (8-way);good;1;raster;neogeo;;;4
 galaxian;Galaxian (Namco set 1);mame;;1979;Namco;Shooter / Gallery;2;90;joystick (2-way),joystick (2-way);good;1;raster;;;;1
 galaga88;Galaga '88;mame;;1987;Namco;Shooter / Gallery;2;270;joystick (8-way),joystick (8-way);good;1;raster;;;;3
