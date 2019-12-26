@@ -56,7 +56,7 @@ sudo make install
 Choose language and let it add emulators that are found (MAME)
 
 ```
-xinit /usr/games/attract $* -- :0 vt$XDG_VTNR
+xinit /usr/local/bin/attract $* -- :0 vt$XDG_VTNR
 ```
 
 ESC quits
