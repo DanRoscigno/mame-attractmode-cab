@@ -15,9 +15,10 @@ During the installation you will be asked what packages you want.  The `standard
 See this page for the sound bits: http://forum.arcadecontrols.com/index.php/topic,156122.0.html
 Stop after adjusting sound with `alsamixer` (do not install openbox)
 
+Note: Substitute your username for `rastan` (my cab is an old Rastan cab):
 ```
 sudo apt-get install alsa-utils
-sudo usermod -a -G audio <username>
+sudo usermod -a -G audio rastan
 sudo alsamixer
 ```
 
