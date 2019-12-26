@@ -10,6 +10,17 @@ During the installation you will be asked what packages you want.  The `standard
 
 ### Let the install finish and reboot
 
+### Setup sound
+
+See this page for the sound bits: http://forum.arcadecontrols.com/index.php/topic,156122.0.html
+Stop after adjusting sound with `alsamixer` (do not install openbox)
+
+```
+sudo apt-get install alsa-utils
+sudo usermod -a -G audio <username>
+sudo alsamixer
+```
+
 ### Add tools and libraries
 
 At this point this is a commandline (no Xwindows) system.  Install the basics for X, compiling, libraries, and pre-requisites for MAME and Attract Mode.
