@@ -1,0 +1,7 @@
+# When a shell is opened in X Attractmode will start
+# start attract if we are logged in on tty1:
+case "`tty`" in  
+    /dev/tty1)
+                attract && exit
+                ;;  
+esac
