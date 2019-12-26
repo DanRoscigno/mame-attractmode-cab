@@ -25,7 +25,9 @@ sudo alsamixer
 
 At this point this is a commandline (no Xwindows) system.  Install the basics for X, compiling, libraries, and pre-requisites for MAME and Attract Mode.
 ```
-sudo apt-get update && sudo apt-get -y install git libsfml-dev libopenal-dev \
+sudo apt-get update && sudo apt-get upgrade
+
+sudo apt-get -y install git libsfml-dev libopenal-dev \
 libavformat-dev libfontconfig1-dev libfreetype6-dev libswscale-dev \
 libavresample-dev libarchive-dev libjpeg-dev libglu1-mesa-dev \
 xorg xterm build-essential
