@@ -80,8 +80,6 @@ Reboot.  You should be automatically logged in.
 ## Configure Attract-Mode to auto start
 By adding the `xinit` command used earlier to start Attract-Mode to your `.profile` you can start Attract-Mode at boot.  Edit your .profile and add these lines to the bottom:
 ```
-# set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 # start attract if we are logged in on tty1:
 case "`tty`" in
     /dev/tty1)
@@ -98,8 +96,6 @@ Reboot.  You should be automatically logged in, and Attract-Mode should start.  
 If you want Attract-Mode to restart when a player exits Attract-Mode, then modify the `.profile` adding `&& exit` (the getty process will log you back in, which will restart Attract-Mode)
 
 ```
-# set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 # start attract if we are logged in on tty1:
 case "`tty`" in
     /dev/tty1)
