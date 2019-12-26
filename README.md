@@ -60,3 +60,52 @@ xinit /usr/games/attract $* -- :0 vt$XDG_VTNR
 ```
 
 ESC quits
+
+## Setup auto login
+Edit the `getty` process for `tty1`
+```
+sudo systemctl edit getty@tty1
+```
+
+Paste in these lines (substitute your username for `rastan` (my cab is an old Rastan cab):
+```
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty -a rastan --noclear %I $TERM
+```
+
+## Test auto login
+Reboot.  You should be automatically logged in.
+
+## Configure Attract-Mode to auto start
+By adding the `xinit` command used earlier to start Attract-Mode to your `.profile` you can start Attract-Mode at boot.  Edit your .profile and add these lines to the bottom:
+```
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+# start attract if we are logged in on tty1:
+case "`tty`" in
+    /dev/tty1)
+                xinit /usr/local/bin/attract $* -- :0 vt$XDG_VTNR 
+                ;;
+esac
+```
+
+
+## Test Attract-Mode auto start
+Reboot.  You should be automatically logged in, and Attract-Mode should start.  Play Super Tank, and then exit Super Tank and Attract-Mode (`ESC`, `ESC`).
+
+## Have Attract-Mode auto-restart
+If you want Attract-Mode to restart when a player exits Attract-Mode, then modify the `.profile` adding `&& exit` (the getty process will log you back in, which will restart Attract-Mode)
+
+```
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+# start attract if we are logged in on tty1:
+case "`tty`" in
+    /dev/tty1)
+                xinit /usr/local/bin/attract $* -- :0 vt$XDG_VTNR && exit
+                ;;
+esac
+```
+
+## 
