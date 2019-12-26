@@ -62,6 +62,9 @@ xinit /usr/games/attract $* -- :0 vt$XDG_VTNR
 ESC quits
 
 ## Setup auto login
+
+Note: You can read more about this at https://askubuntu.com/questions/659267/how-do-i-override-or-configure-systemd-services
+
 Edit the `getty` process for `tty1`
 ```
 sudo systemctl edit getty@tty1
