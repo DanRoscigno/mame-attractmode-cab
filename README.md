@@ -21,6 +21,8 @@ sudo apt-get install alsa-utils
 sudo usermod -a -G audio rastan
 sudo alsamixer
 ```
+### Reboot
+Reboot after installing and configuring audio or MAME will hang when you try to exit a game.
 
 ### Add tools and libraries
 
