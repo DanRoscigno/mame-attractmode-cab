@@ -123,4 +123,35 @@ case "`tty`" in
 esac
 ```
 
-## 
+# Artwork
+
+See http://forum.attractmode.org/index.php?topic=344.0 to acquire artwork 
+
+I think that these are the default directories in which the themes, or layouts, look for the artwork:
+
+```
+mkdir -p $HOME/mame/flyer  $HOME/mame/marquee  $HOME/mame/roms  $HOME/mame/snap  $HOME/mame/wheel
+```
+
+Place the artwork in the above directories.  If Attract-Mode is running while you do this you will see the artwork in Attract-Mode without restarting.
+
+# Audio
+I had no audio output at the headphone jack.  To find the default soundcard (I have two) I ran `aplay -l`:
+```
+rastan@arcade:/etc$ aplay -l
+**** List of PLAYBACK Hardware Devices ****
+card 0: HDMI [HDA Intel HDMI], device 3: HDMI 0 [HDMI 0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 1: PCH [HDA Intel PCH], device 0: ALC3220 Analog [ALC3220 Analog]
+  Subdevices: 0/1
+  Subdevice #0: subdevice #0
+```
+
+`Card 1` is the one I want, so I set the default by adding the file `/etc/asound.cnf` with this content:
+```
+defaults.pcm.card 1
+defaults.ctl.card 1
+```
+
+I then rebooted.
