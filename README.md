@@ -92,7 +92,9 @@ untar
 make -j3
 ```
 
-# Note: Need a command here to `install` MAME
+```
+sudo mkdir -p /usr/local/games/mame && sudo cp -r mame64 plugins /usr/local/games/mame/
+```
 
 ### Test with a ROM from mamedev.org
 
@@ -106,7 +108,7 @@ mv supertnk.zip ~/mame/roms
 Command from https://linuxconfig.org/how-to-run-x-applications-without-a-desktop-or-a-wm
 
 ```
-xinit /usr/games/mame supertnk $* -- :0 vt$XDG_VTNR
+xinit /usr/local/games/mame/mame64 -rp $HOME/mame/roms supertnk $* -- :0 vt$XDG_VTNR
 ```
 ESC will quit
 
