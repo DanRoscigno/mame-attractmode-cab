@@ -35,12 +35,64 @@ libavformat-dev libfontconfig1-dev libfreetype6-dev libswscale-dev \
 libavresample-dev libarchive-dev libjpeg-dev libglu1-mesa-dev \
 xorg xterm build-essential
 ```
+
+### Update the compiler
+MAME .217 requires GCC 7.x:
+
+Don't go wild copying and pasting all of the commands at once, run them line by line as some of the commands are interactive.
+
+```
+sudo apt-get install -y software-properties-common
+```
+
+```
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+```
+
+```
+sudo apt update
+```
+
+```
+sudo apt install g++-7 -y
+```
+
+```
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 \
+                         --slave /usr/bin/g++ g++ /usr/bin/g++-7 
+```
+
+```
+sudo update-alternatives --config gcc
+```
+
+```
+gcc --version
+```
+
+```
+g++ --version
+```
+
 ## Install MAME
+
 ```
-sudo add-apt-repository ppa:c.falco/mame
-sudo apt-get update
-sudo apt-get install mame mame-doc mame-extra mame-tools
+sudo apt-get install git build-essential python libsdl2-dev libsdl2-ttf-dev libfontconfig-dev qt5-default
 ```
+
+```
+mkdir mame-src
+cd mame-src
+wget https://github.com/mamedev/mame/archive/mame0217.tar.gz
+```
+
+untar
+
+```
+make -j3
+```
+
+# Note: Need a command here to `install` MAME
 
 ### Test with a ROM from mamedev.org
 
