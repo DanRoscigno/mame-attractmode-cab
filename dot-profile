@@ -1,7 +1,19 @@
-# When a shell is opened in X Attractmode will start
-# start attract if we are logged in on tty1:
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
+# At boot user rastan is auto logged in on tty1.
+# start attract via xinit if we are logged in on tty1:
 case "`tty`" in  
     /dev/tty1)
-                attract && exit
+                #attract && exit
+                xinit /usr/local/bin/attract $* -- :0 vt$XDG_VTNR && exit
                 ;;  
 esac
