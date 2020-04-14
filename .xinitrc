@@ -1,2 +1,2 @@
-xinit xautolock -detectsleep -locker 'sudo /bin/systemctl suspend' &
+/usr/bin/xautolock -detectsleep -locker 'sudo /bin/systemctl suspend' &
 /usr/local/bin/attract && exit
