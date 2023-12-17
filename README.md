@@ -6,6 +6,12 @@ Install Ubuntu **server** 22.04 LTS
 
 Accept defaults, except for the ssh checkbox, make sure that this is selected
 
+Pay attention when setting up the disk, I ended up with a 100GB logical volume and had to extend it. This is how I extended it to 300GB:
+
+```bash
+sudo lvextend -L 300GB /dev/ubuntu-vg/ubuntu-lv
+```
+
 ```bash
 sudo apt update && sudo apt upgrade
 ```
