@@ -1,5 +1,56 @@
 # mame-attractmode-cab
 
+Update: December 2023
+
+Install Ubuntu **server** 22.04 LTS
+
+Accept defaults, except for the ssh checkbox, make sure that this is selected
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+```bash
+sudo apt-get install libsdl2-dev
+```
+
+```bash
+sudo apt install libsfml-dev \
+                 libavutil-dev \
+                 ffmpeg \
+                 libtiff-dev \
+                 libfreetype6-dev \
+                 libexpat1-dev \
+                 libavcodec-dev \
+                 libavformat-dev \
+                 pkg-config \
+                 libswscale-dev \
+                 libalut-dev \
+                 libglfw3-dev \
+                 libgl1-mesa-dev \
+                 libglu1-mesa-dev \
+                 libfontconfig1-dev \
+                 qtbase5-dev \
+                 git
+```
+
+```bash
+git clone https://github.com/mamedev/mame.git
+```
+
+```bash
+cd mame
+make -j $(cat /proc/cpuinfo | grep -c processor)
+```
+
+```bash
+cd ~/
+scp -r droscigno@mini.local:/Volumes/Annex/arcade/mame .
+```
+==================================================================================
+
+OLD
+
 ## Install Ubuntu Server
 I used 16.04 ubuntu SERVER iso:
 `http://releases.ubuntu.com/16.04/ubuntu-16.04.6-server-amd64.iso`
