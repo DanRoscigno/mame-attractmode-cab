@@ -10,6 +10,7 @@ Pay attention when setting up the disk, I ended up with a 100GB logical volume a
 
 ```bash
 sudo lvextend -L 300GB /dev/ubuntu-vg/ubuntu-lv
+sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 ```
 
 ```bash
