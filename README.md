@@ -39,6 +39,18 @@ sudo apt install libsfml-dev \
                  libfontconfig1-dev \
                  qtbase5-dev \
                  libsdl2-ttf-dev \
+                 libxrandr-dev \
+                 libjpeg-dev \
+                 libarchive-dev \
+                 libswresample-dev \
+                 libopenal-dev \
+                 xinit \
+                 openbox \
+                 menu \
+                 x11-xserver-utils \
+                 python3-xdg \
+                 fonts-recommended \
+                 xorg-fonts-misc \
                  git
 ```
 
