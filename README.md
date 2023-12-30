@@ -1,5 +1,15 @@
 # mame-attractmode-cab
 
+## OS Install
+
+[OS_install](./OS_install.md)
+
+## Configure WiFi
+
+## Configure Attract mode and MAME
+
+## OLD
+
 Update: December 2023
 
 Install Ubuntu **server** 22.04 LTS
