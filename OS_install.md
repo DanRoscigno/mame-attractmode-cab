@@ -7,12 +7,15 @@ I am using Arch Linux.
 My old Dell OptiPlex 3200 boots uses secure boot by default, based on my reading of the Arch wiki I need to be out
 of secure boot to install Arch. I disabled secure boot, and so I had to follow the instructions for a Legacy BIOS install.
 
-Some are installed during the Arch install, and some are installed
-after booting into the new system.
+Because the Dell had been used with UEFI firmware the disk had GPT partitioning, this would not work with Arch and BIOS, I had to wipe the table and initialize it for an MBR partition tabe. To do this I used the `o` command in fdisk.
 
-## All of the packages installed on my system
+The install process is on the [Arch wiki](https://wiki.archlinux.org/title/Installation_guide). Yes, it makes you think and forces you to make decisions. This is a good thing.
 
-This is the output of:
+## Package installation
+
+During the OS install you will be asked what to install, the wiki lists a short list of required packages. Read that section carefully if you are connecting to the network via wifi as you will need to install a couple of extra packages. All of the packages installed on my system are listed below, including the ones for wireless and DHCP.
+
+This is the output of the folowing command from my running system:
 ```bash
 expac "%-20n\t\# %10d\\" $(comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg xorg; expac -l '\n' '%E' base; } | sort -u))
 ```
