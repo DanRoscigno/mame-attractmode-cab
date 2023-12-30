@@ -1,4 +1,4 @@
-# OS Inatall
+# OS Install
 
 I am using Arch Linux.
 
