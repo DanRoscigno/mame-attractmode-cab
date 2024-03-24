@@ -1,5 +1,17 @@
 # mame-attractmode-cab
 
+## Add a new game to Attract Mode
+
+- Get `catver.init` from https://www.progettosnaps.net/catver/
+- scp `catver.ini` to `/home/rastan/mame/catver.ini`
+- ssh in to the game as user `rastan`
+- run `attract --build-romlist mame --full`
+- the above command will generate a new mame.txt, find the game you want in the new file and add the corresponding line to `.attract/romlists/mame.txt`
+  for example, to add the 25th anniversary PacMan:
+  ```
+  25pacman;25pacman;mame;;;;MultiGame / Compilation;;;;;;;;;;;;;;
+  ```
+
 ## OS Install
 
 [OS_install](./OS_install.md)
